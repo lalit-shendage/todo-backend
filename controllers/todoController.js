@@ -1,4 +1,4 @@
-const Todo = require('../models/todoModel'); // Import the model
+const Todo = require('../models/todoModel'); 
 
 // Create a new todo
 exports.createTodo = async (req, res) => {
