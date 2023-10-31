@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 require('dotenv').config(); 
-user=process.env.USER;
 
-mongoose.connect(`mongodb+srv://${user}@cluster0.dwnwv8t.mongodb.net/todo-mern`);
+
+mongoose.connect(process.env.MONGODB_URI);
 
 mongoose.connection.on('connected', () => {
   console.log('Connected to the database');
